@@ -1,0 +1,20 @@
+<nav> 
+      <img class="brand-logo" src="http://localhost:3000/images/Artifacts.png" alt="artifacts-logo">
+</nav>
+
+<div class="content">
+  <div class="item-container" *ngFor="let item of currentItems">
+    <h3>{{item.title}}</h3>
+    <p>{{item.description}}</p>
+    <span><b>Price:</b> {{item.price}}</span>
+    <img [src]="'http://localhost:3000'+item.imageURL+'.png'" alt="Not working">
+  </div>
+</div>
+
+<div class="scroll-div"
+		    infiniteScroll
+		    [infiniteScrollDistance]="2"
+	    [infiniteScrollThrottle]="50"
+		    (scrolled)="getItems()">
+</div>
+
