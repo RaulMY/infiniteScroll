@@ -16,7 +16,7 @@ const  corsOptions ={
 }
 app.use(require("cors")(corsOptions));
 
-require("mongoose").connect("mongodb:(BasedeDatos)");
+require("mongoose").connect("mongodb:(Base de Datos)");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
