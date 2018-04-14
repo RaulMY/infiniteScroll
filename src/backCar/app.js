@@ -16,7 +16,7 @@ const  corsOptions ={
 }
 app.use(require("cors")(corsOptions));
 
-require("mongoose").connect("mongodb:(Base de Datos)");
+require("mongoose").connect("mongodb://raulmy:raulmy@ds215019.mlab.com:15019/raulmy");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
